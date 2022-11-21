@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+
     <div class="menu">
       <div class="menu-item">
         Inicio
@@ -7,18 +8,19 @@
       <div class="menu-item">
         Transacciones
       </div>
+
+      <div class="logo">
+        <img src="../assets/ctrlu-logo.png">
+      </div>
+
       <div class="menu-item">
-        Info
+        Transacciones
+      </div>
+      <div class="menu-item">
+        About
       </div>
     </div>
-    <div class="logo">
-      <img src="../assets/ctrlu-logo.png">
-      <!-- <img src="../assets/ctrlu-logo.png"> -->
-    </div>
 
-    <div class="hello">
-      Hola xd
-    </div>
   </div>
 
 </template>
@@ -42,23 +44,32 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .menu-item {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   flex: 1;
   text-align: center;
+  cursor: pointer;
+
+  font-size: 30px;
+  color: var(--text-color);
+
+  padding: 10px;
+  border-bottom: 3px solid white;
+}
+
+.menu-item:hover {
+  border-bottom: 3px solid blue;
 }
 
 .logo {
   border: 3px solid red;
   display: flex;
-  align-content: left;
-  justify-content: left;
+  align-content: center;
+  justify-content: center;
   vertical-align: middle;
-  /* width: ; */
-  /* height: 90vh; */
 }
 
 </style>
